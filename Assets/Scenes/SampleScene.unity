@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 9567806}
   - component: {fileID: 9567805}
   - component: {fileID: 9567809}
+  - component: {fileID: 9567810}
   m_Layer: 0
   m_Name: Jugador1
   m_TagString: Untagged
@@ -220,6 +221,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9567810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9567804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709adc2c82ab8dd45a935b28e8259b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &50525368
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +246,7 @@ GameObject:
   - component: {fileID: 50525371}
   - component: {fileID: 50525370}
   - component: {fileID: 50525369}
+  - component: {fileID: 50525374}
   m_Layer: 0
   m_Name: Jugador2
   m_TagString: Untagged
@@ -328,6 +342,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &50525374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50525368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d58845eebb83554e89764fc412f4f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
