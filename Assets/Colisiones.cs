@@ -5,13 +5,15 @@ using UnityEngine.UI;
 
 public class Colisiones : MonoBehaviour
 {
-    public AudioClip gol;
-    AudioSource fuenteaudio;
+    public AudioClip SonidoGol;
+    public AudioSource fuenteaudio;
     public Text puntaje1;
     public Text puntaje2;
     public Text ganando;
+    public Text gol;
     int golJug1;
     int golJug2;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -42,16 +44,19 @@ public class Colisiones : MonoBehaviour
         {
             golJug2++;
             puntaje2.text = golJug2.ToString();
-            fuenteaudio.clip = gol;
+            fuenteaudio.clip = SonidoGol;
             fuenteaudio.Play();
+            transform.position = new Vector3(0, 0.85f, -0.55f);
+         
             // gol jugador 2
         }
         if (col.gameObject.name == "Arco2")
         {
             golJug1++;
             puntaje1.text = golJug1.ToString();
-            fuenteaudio.clip = gol;
+            fuenteaudio.clip = SonidoGol;
             fuenteaudio.Play();
+            transform.position = new Vector3(0, 0.85f, -0.55f);
             // gol jugador 1
         }
     }
