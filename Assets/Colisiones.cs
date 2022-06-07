@@ -13,7 +13,7 @@ public class Colisiones : MonoBehaviour
     public Text gol;
     int golJug1;
     int golJug2;
-    
+    string GolDeQuien;  
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +47,7 @@ public class Colisiones : MonoBehaviour
             fuenteaudio.clip = SonidoGol;
             fuenteaudio.Play();
             transform.position = new Vector3(0, 0.85f, -0.55f);
-         
+            gol.text = ("Gol de Jugador 2"); 
             // gol jugador 2
         }
         if (col.gameObject.name == "Arco2")
