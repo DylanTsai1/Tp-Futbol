@@ -220,7 +220,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &9567810
 MonoBehaviour:
@@ -269,7 +269,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &50525370
 BoxCollider:
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 218606556}
   - component: {fileID: 218606555}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: PanelDeGol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -685,7 +685,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218606553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1552385120}
@@ -694,8 +694,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000066757, y: -223}
-  m_SizeDelta: {x: -436.40085, y: -506.42007}
+  m_AnchoredPosition: {x: 1.982605, y: 17.171997}
+  m_SizeDelta: {x: -260.7453, y: -252.21558}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &218606555
 MonoBehaviour:
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 0.48381877, b: 0, a: 0.91764706}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1805,7 +1805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419222477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.58, y: 0.85, z: -0.55}
+  m_LocalPosition: {x: 6.82, y: 0.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1823,12 +1823,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d902e2b1fc5f0b4a81a16a535538a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gol: {fileID: 0}
+  SonidoGol: {fileID: 0}
   fuenteaudio: {fileID: 379829080}
   puntaje1: {fileID: 1065326460}
   puntaje2: {fileID: 389980228}
   ganando: {fileID: 0}
-  g: {fileID: 0}
+  gol: {fileID: 1552385121}
+  panelDeGol: {fileID: 218606553}
 --- !u!1 &1453356668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,7 +1843,7 @@ GameObject:
   - component: {fileID: 1453356671}
   - component: {fileID: 1453356670}
   m_Layer: 0
-  m_Name: Arco1
+  m_Name: Arco2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1914,7 +1915,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453356668}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.34, y: 1.89, z: 0.7}
+  m_LocalPosition: {x: 10.34, y: 1.89, z: 0}
   m_LocalScale: {x: 5, y: 4, z: 0.6982316}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2122,8 +2123,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64, y: -0.000013952}
-  m_SizeDelta: {x: 174.69675, y: 46.231483}
+  m_AnchoredPosition: {x: 32, y: -0.0000095367}
+  m_SizeDelta: {x: 272.333, y: 53.174644}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1552385121
 MonoBehaviour:
@@ -2145,18 +2146,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Gol de jugador x
 --- !u!222 &1552385122
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2178,7 +2179,7 @@ GameObject:
   - component: {fileID: 1664094937}
   - component: {fileID: 1664094936}
   m_Layer: 0
-  m_Name: Arco2
+  m_Name: Arco1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2250,8 +2251,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664094934}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -10.39, y: 1.89, z: 0.7}
-  m_LocalScale: {x: 5, y: 4, z: 0.6982316}
+  m_LocalPosition: {x: -10.39, y: 1.89, z: 0}
+  m_LocalScale: {x: 5.000002, y: 4, z: 0.6982316}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
