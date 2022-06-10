@@ -20,13 +20,16 @@ public class Colisiones : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        golJug1 = System.Convert.ToInt32(puntaje1);
-        golJug2 = System.Convert.ToInt32(puntaje2);
+        golJug1 = 0;
+        golJug2 = 0;
+        puntaje2.text = golJug2.ToString();
+        puntaje1.text = golJug1.ToString();
 
         panelDeGol.SetActive(false);
 
         customTime = 5;
-        isCounting = false; 
+        isCounting = false;
+        
     }
 
     // Update is called once per frame
@@ -41,7 +44,7 @@ public class Colisiones : MonoBehaviour
             panelDeGol.SetActive(false);
             customTime = 5;
             //La pelota vuelve a la posición inicial
-            transform.position = new Vector3(0, 5f, -0.55f);
+            
         }
         // while (golJug1 > golJug2)
         //  {
@@ -61,6 +64,7 @@ public class Colisiones : MonoBehaviour
     {
         if (col.gameObject.name == "Arco1")
         {
+          
             // Suma puntaje del marcador del jugador2
             golJug2++; 
             puntaje2.text = golJug2.ToString();
@@ -71,13 +75,15 @@ public class Colisiones : MonoBehaviour
             panelDeGol.SetActive(true);
             customTime -= Time.deltaTime;
             gol.text = "Gol de jugador 2";
-        
-          
-          
+            transform.position = new Vector3(0, 5f, -0.55f);
+
+
+
         }
         
         if (col.gameObject.name == "Arco2")
         {
+          
             // Suma puntaje del marcador del jugador 1
             golJug1++;
             puntaje1.text = golJug1.ToString();
@@ -88,8 +94,7 @@ public class Colisiones : MonoBehaviour
             panelDeGol.SetActive(true);
             customTime -= Time.deltaTime;
             gol.text = "Gol de jugador 1";
-
-             
+            transform.position = new Vector3(0, 5f, -0.55f);
 
         }
        
