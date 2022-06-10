@@ -1823,7 +1823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d902e2b1fc5f0b4a81a16a535538a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SonidoGol: {fileID: 0}
+  SonidoGol: {fileID: 8300000, guid: e1d71fb87ed1cd84e887961279e36333, type: 3}
   fuenteaudio: {fileID: 379829080}
   puntaje1: {fileID: 1065326460}
   puntaje2: {fileID: 389980228}
@@ -1915,7 +1915,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453356668}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.34, y: 1.89, z: 0}
+  m_LocalPosition: {x: 10.41, y: 1.89, z: 0}
   m_LocalScale: {x: 5, y: 4, z: 0.6982316}
   m_Children: []
   m_Father: {fileID: 0}

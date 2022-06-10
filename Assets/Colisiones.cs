@@ -14,7 +14,9 @@ public class Colisiones : MonoBehaviour
     public GameObject panelDeGol;
     int golJug1 = 0;
     int golJug2 = 0; 
-    string GolDeQuien;  
+    string GolDeQuien;
+    float customTime;
+    bool isCounting; 
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +24,25 @@ public class Colisiones : MonoBehaviour
         golJug2 = System.Convert.ToInt32(puntaje2);
 
         panelDeGol.SetActive(false);
+
+        customTime = 5;
+        isCounting = false; 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (customTime < 5)
+        {
+            customTime -= Time.deltaTime;
+        }
+        if (customTime < 0)
+        {
+            panelDeGol.SetActive(false);
+            customTime = 5;
+            //La pelota vuelve a la posición inicial
+            transform.position = new Vector3(0, 5f, -0.55f);
+        }
         // while (golJug1 > golJug2)
         //  {
         //    ganando.text = "Jugador 1 está ganando";
@@ -39,6 +55,7 @@ public class Colisiones : MonoBehaviour
         // {
         //     ganando.text = "Están empatando";
         //  }
+
     }
     void OnCollisionEnter(Collision col)
     {
@@ -52,9 +69,10 @@ public class Colisiones : MonoBehaviour
             fuenteaudio.Play();
             // Aparece el panel de gol diciendo que el jugador 1 hizo gol
             panelDeGol.SetActive(true);
+            customTime -= Time.deltaTime;
             gol.text = "Gol de jugador 2";
-            //La pelota se resetea a la posición inicial
-            transform.position = new Vector3(0, 0.85f, -0.55f);
+        
+          
           
         }
         
@@ -68,12 +86,14 @@ public class Colisiones : MonoBehaviour
             fuenteaudio.Play();
             // Aparece el panel de gol diciendo que el jugador 1 hizo gol
             panelDeGol.SetActive(true);
+            customTime -= Time.deltaTime;
             gol.text = "Gol de jugador 1";
-            //La pelota se resetea a la posición inicial
-            transform.position = new Vector3(0, 0.85f, -0.55f);
+
+             
 
         }
-        
+       
+
     }
     
 
