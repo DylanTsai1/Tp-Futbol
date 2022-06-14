@@ -20,6 +20,7 @@ public class Colisiones : MonoBehaviour
     float timetime;
     public Text txt_timetime;
     public GameObject prefab;
+    public GameObject prefab2;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,15 +66,19 @@ public class Colisiones : MonoBehaviour
             int i = 0;
             if (golJug1 > golJug2)
             {
+                panelDeGol.SetActive(true);
                 gol.text = "Ganador: Jugador 1";
             }
             else if (golJug2 > golJug1)
             {
+                panelDeGol.SetActive(true);
                 gol.text = "Ganador: Jugador 2";
             }
-            while (i < 30)
+            while (i < 5)
             {
                 Instantiate(prefab);
+                Instantiate(prefab2);
+                i++;
             }
         }
         // while (golJug1 > golJug2)
