@@ -16,10 +16,14 @@ public class Colisiones : MonoBehaviour
     int golJug2 = 0; 
     string GolDeQuien;
     float customTime;
-    bool isCounting; 
+    bool isCounting;
+    float timetime;
+    public Text txt_timetime;
+    public GameObject prefab;
     // Start is called before the first frame update
     void Start()
     {
+        timetime = 120;
         golJug1 = 0;
         golJug2 = 0;
         puntaje2.text = golJug2.ToString();
@@ -27,7 +31,7 @@ public class Colisiones : MonoBehaviour
 
         panelDeGol.SetActive(false);
 
-        customTime = 5;
+        customTime = 3;
         isCounting = false;
         
     }
@@ -35,16 +39,42 @@ public class Colisiones : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (customTime < 5)
+        if (timetime < 1)
+        {
+            timetime = 0;
+            txt_timetime.text = customTime.ToString();
+        }
+        else
+        {
+            timetime -= Time.deltaTime;
+            txt_timetime.text = Mathf.Floor(timetime).ToString();
+        }
+            if (customTime < 3)
         {
             customTime -= Time.deltaTime;
         }
         if (customTime < 0)
         {
             panelDeGol.SetActive(false);
-            customTime = 5;
+            customTime = 3;
             //La pelota vuelve a la posición inicial
             
+        }
+        if (timetime == 0)
+        {
+            int i = 0;
+            if (golJug1 > golJug2)
+            {
+                gol.text = "Ganador: Jugador 1";
+            }
+            else if (golJug2 > golJug1)
+            {
+                gol.text = "Ganador: Jugador 2";
+            }
+            while (i < 30)
+            {
+                Instantiate(prefab);
+            }
         }
         // while (golJug1 > golJug2)
         //  {

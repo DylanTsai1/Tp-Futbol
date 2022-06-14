@@ -7,6 +7,7 @@ public class Tiempo : MonoBehaviour
 {
     public Text txt_customTime;
     float customTime;
+    public Text ganador;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +28,6 @@ public class Tiempo : MonoBehaviour
         txt_customTime.text = Mathf.Floor(customTime).ToString(); 
         // como redondear hacia arriba
         }
+        
     }
 }
