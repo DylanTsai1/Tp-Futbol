@@ -1832,8 +1832,8 @@ MonoBehaviour:
   gol: {fileID: 1552385121}
   panelDeGol: {fileID: 218606553}
   txt_timetime: {fileID: 1510115279}
-  prefab: {fileID: 0}
-  prefab2: {fileID: 0}
+  prefab: {fileID: 3457090888001935278, guid: f50d2fafb2c529240832aa95225abcd3, type: 3}
+  prefab2: {fileID: 6434217546457932320, guid: 39427ec98fbc74e428261bbd2b28f0fa, type: 3}
 --- !u!1 &1453356668
 GameObject:
   m_ObjectHideFlags: 0
