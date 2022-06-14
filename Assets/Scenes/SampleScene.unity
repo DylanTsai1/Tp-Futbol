@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1834,6 +1834,8 @@ MonoBehaviour:
   txt_timetime: {fileID: 1510115279}
   prefab: {fileID: 3457090888001935278, guid: f50d2fafb2c529240832aa95225abcd3, type: 3}
   prefab2: {fileID: 6434217546457932320, guid: 39427ec98fbc74e428261bbd2b28f0fa, type: 3}
+  jugador1: {fileID: 9567804}
+  jugador2: {fileID: 50525368}
 --- !u!1 &1453356668
 GameObject:
   m_ObjectHideFlags: 0

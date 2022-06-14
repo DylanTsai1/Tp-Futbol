@@ -116,8 +116,8 @@ public class Colisiones : MonoBehaviour
             customTime -= Time.deltaTime;
             gol.text = "Gol de jugador 2";
             transform.position = new Vector3(0, 5f, -0.55f);
-            jugador1.transform.position = new Vector3(5f, 0.5f, 0);
-            jugador2.transform.position = new Vector3(-5f, 0.5f, 0);
+            jugador2.transform.position = new Vector3(5f, 0.5f, 0);
+            jugador1.transform.position = new Vector3(-5f, 0.5f, 0);
 
         }
         
@@ -135,8 +135,8 @@ public class Colisiones : MonoBehaviour
             customTime -= Time.deltaTime;
             gol.text = "Gol de jugador 1";
             transform.position = new Vector3(0, 5f, -0.55f);
-            jugador1.transform.position = new Vector3(5f, 0.5f, 0);
-            jugador2.transform.position = new Vector3(-5f, 0.5f, 0);
+            jugador2.transform.position = new Vector3(5f, 0.5f, 0);
+            jugador1.transform.position = new Vector3(-5f, 0.5f, 0);
 
         }
        
