@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class Colisiones : MonoBehaviour
 {
     public AudioClip SonidoGol;
-    public AudioSource fuenteaudio;
+    public AudioSource fuenteAudio;
+    public AudioClip SonidoDeAmbiente;
+    public AudioSource fuenteAudiMusica;
     public Text puntaje1;
     public Text puntaje2;
     public Text ganando;
@@ -109,8 +111,8 @@ public class Colisiones : MonoBehaviour
             golJug2++; 
             puntaje2.text = golJug2.ToString();
             // Se escucha el sonido de gol
-            fuenteaudio.clip = SonidoGol;
-            fuenteaudio.Play();
+            fuenteAudio.clip = SonidoGol;
+            fuenteAudio.Play();
             // Aparece el panel de gol diciendo que el jugador 1 hizo gol
             panelDeGol.SetActive(true);
             customTime -= Time.deltaTime;
@@ -128,8 +130,8 @@ public class Colisiones : MonoBehaviour
             golJug1++;
             puntaje1.text = golJug1.ToString();
             // Se escucha el sonido de gol
-            fuenteaudio.clip = SonidoGol;
-            fuenteaudio.Play();
+            fuenteAudio.clip = SonidoGol;
+            fuenteAudio.Play();
             // Aparece el panel de gol diciendo que el jugador 1 hizo gol
             panelDeGol.SetActive(true);
             customTime -= Time.deltaTime;
