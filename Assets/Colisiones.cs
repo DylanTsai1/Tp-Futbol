@@ -8,7 +8,7 @@ public class Colisiones : MonoBehaviour
     public AudioClip SonidoGol;
     public AudioSource fuenteAudio;
     public AudioClip SonidoDeAmbiente;
-    public AudioSource fuenteAudiMusica;
+    public AudioSource fuenteAudioAmbiente;
     public Text puntaje1;
     public Text puntaje2;
     public Text ganando;
@@ -74,14 +74,20 @@ public class Colisiones : MonoBehaviour
             if (golJug1 > golJug2)
             {
                 panelDeGol.SetActive(true);
-                gol.text = "Ganador: Jugador 1";
+                gol.text = "Ha ganado el jugador 1!!!";
             }
             else if (golJug2 > golJug1)
             {
                 panelDeGol.SetActive(true);
-                gol.text = "Ganador: Jugador 2";
+                gol.text = "Ha ganado el jugador 2!!!";
             }
-            while (prefabs < 5)
+            else if (golJug2 == golJug1)
+            {
+                panelDeGol.SetActive(true);
+                gol.text = "Han empatado";
+
+            }
+                while (prefabs < 5)
             {
                 Instantiate(prefab);
                 Instantiate(prefab2);
