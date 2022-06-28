@@ -15,11 +15,11 @@ public class PlayerController1 : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(0, 0, 0.1f);
+            transform.Translate(0, 0, 0.15f);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(0, 0, -0.1f);
+            transform.Translate(0, 0, -0.15f);
         }
         if (Input.GetKey(KeyCode.D))
         {

@@ -15,11 +15,11 @@ public class PlayerController2 : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Translate(0, 0, 0.1f);
+            transform.Translate(0, 0, 0.15f);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Translate(0, 0, -0.1f);
+            transform.Translate(0, 0, -0.15f);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {

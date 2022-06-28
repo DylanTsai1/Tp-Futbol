@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.4465766, g: 0.49641144, b: 0.5748164, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465766, g: 0.49641138, b: 0.57481635, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -193,6 +193,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11938607}
   m_Mesh: {fileID: 4300000, guid: 3e9000b9cb5fa6b49ae9e568e2d1af62, type: 3}
+--- !u!1 &36534786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: be07ab5d402562a4d91e58daa77e7551,
+    type: 3}
+  m_PrefabInstance: {fileID: 804250852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &36534790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36534786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &92677520
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
@@ -584,6 +603,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 50, y: 4, z: 0}
+--- !u!1 &212311289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: be07ab5d402562a4d91e58daa77e7551,
+    type: 3}
+  m_PrefabInstance: {fileID: 1247371396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &212311293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212311289}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &218606553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,7 +1148,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0, y: 0, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &466501609
 MeshRenderer:
@@ -1607,7 +1645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
@@ -1676,7 +1714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
@@ -1792,7 +1830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
@@ -2239,7 +2277,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0, y: 0, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1058126438 stripped
 GameObject:
@@ -2545,7 +2583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
@@ -2856,7 +2894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be07ab5d402562a4d91e58daa77e7551, type: 3}
@@ -3129,7 +3167,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 120
+  m_Text: '120
+
+'
 --- !u!222 &1510115280
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3172,8 +3212,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: -0.0000095367}
-  m_SizeDelta: {x: 272.333, y: 53.174644}
+  m_AnchoredPosition: {x: 72, y: -7}
+  m_SizeDelta: {x: 382.87964, y: 84.66854}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1552385121
 MonoBehaviour:
@@ -3206,7 +3246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Gol de jugador x
+  m_Text: 
 --- !u!222 &1552385122
 CanvasRenderer:
   m_ObjectHideFlags: 0
